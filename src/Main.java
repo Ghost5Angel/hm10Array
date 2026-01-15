@@ -11,21 +11,21 @@ public class Main {
         System.out.println("Задача 2");
         System.out.println("Массив а");
         System.out.print(a[0]);
-        for(int i=1; i<3; i++){
+        for(int i=1; i< a.length; i++){
             System.out.print(",");
             System.out.print(a[i]);
         }
         System.out.println();
         System.out.println("массив d");
         System.out.print(d[0]);
-        for(int i=1; i<3; i++){
+        for(int i=1; i< d.length; i++){
             System.out.print(",");
             System.out.print(d[i]);
         }
         System.out.println();
         System.out.println("массив b");
         System.out.print(b[0]);
-        for(int i=1; i<3; i++){
+        for(int i=1; i< b.length; i++){
             System.out.print(",");
             System.out.print(b[i]);
         }
@@ -51,5 +51,15 @@ public class Main {
             System.out.print(",");
             System.out.print(b[i]);
         }
+
+        System.out.println("Задача 4");
+        System.out.println("Массив а");
+        for(int i=0; i< a.length; i++){
+            if(a[i]%2!=0){
+                a[i]+=1;
+            }
+            System.out.print(a[i]+" ");
+        }
+        System.out.println();
     }
 }
